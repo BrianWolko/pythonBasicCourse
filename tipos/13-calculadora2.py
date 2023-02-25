@@ -12,8 +12,10 @@ def division(n1, n2):
 
 def programa(op = ""):
     while op.lower() != "salir":
-        n1 = int(input("Ingrese un número: "))
         op = input("ingrese la operación a realizar: ")
+        if op.lower() == "salir":
+            break
+        n1 = int(input("Ingrese un número: "))
         n2 = int(input("ingrese el segundo número: "))
         match op:
             case '+':
